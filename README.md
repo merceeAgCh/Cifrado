@@ -10,3 +10,4 @@ correr:
 5- Descifrar
 6- Cambiar Letra Especifica.
 
+Estos dos ultimos corren bajo Python 2
