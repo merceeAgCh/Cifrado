@@ -12,7 +12,8 @@ def quitaAcentos(s):    #Funcion para quitar acentos
         ("í", "i"),
         ("ó", "o"),
         ("ú", "u"),
-        ("ñ", "nn"),     #CAMBIAR ñ por n
+        ("ñ", "n"),     #CAMBIAR ñ por n
+        ("ü", "u")
     )
     for a, b in replacements:
         s = s.replace(a, b).replace(a.lower(), b.lower())
@@ -28,6 +29,10 @@ def quitaSignos(s):    #Funcion para quitar signos
         ("#", ""),
         ("%", ""),
         ("&", ""),
+        (".", ""),
+        (",", ""),
+        ('\n', " "),
+        (" ", " ")
     )
     for a, b in replacements:
         s = s.replace(a, b).replace(a.lower(), b.lower())
